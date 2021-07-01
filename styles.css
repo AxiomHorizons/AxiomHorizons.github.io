@@ -23,10 +23,15 @@ BODY {
 
 .flex-grid {
   display: flex;
+  margin: 25px 20% 25px 20%;
+}
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
 }
 .col {
   flex: 1;
-  margin: 25px 20% 25px 20%;
 }
 
 .separator {
