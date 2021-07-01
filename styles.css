@@ -25,13 +25,14 @@ BODY {
   display: flex;
   margin: 25px 20% 25px 20%;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .flex-grid {
     display: block;
   }
 }
 .col {
   flex: 1;
+  margin: 0 20px 0 20px;
 }
 
 .separator {
@@ -62,4 +63,5 @@ BODY {
   color: white;
   background-color: #45464a;
   text-align: right;
+  padding: 45px 45px 45px 0;
 }
