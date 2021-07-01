@@ -26,7 +26,7 @@ BODY {
 }
 .col {
   flex: 1;
-  padding: 10px 20px 10px 20px;
+  margin: 25px 20% 25px 20%;
 }
 
 .separator {
@@ -46,32 +46,11 @@ BODY {
     display: block;
 }
 
-.flex-grid-thirds {
-  display: flex;
-  justify-content: space-between;
-  margin: 25px 20% 25px 20%;
-}
-.flex-grid-thirds .col {
-  width: 32%;
-}
-
-.flex-grid-doubles {
-  display: flex;
-  justify-content: space-between;
-  margin: 25px 16% 25px 16%;
-}
-.flex-grid-doubles .col {
-  width: 50%;
-}
 
 .img1 {
   display: block;
   width: 100%;
   border: 0;
-}
-
-.img2 {
-    display: block;
 }
 
 .footer {
