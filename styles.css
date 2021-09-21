@@ -4,31 +4,34 @@ BODY {
     font-size: 18px;
     margin: 0;
 }
+
 H1 {
     margin: 0.67em 0;
 }
 
-HEADER {
+NAV {
+    position: sticky;
+    top: 0;
     height: 75px;
-    top: -75px; /* ignored until position is fixed, then used for transition */
-    transition: top 1s;
+    transition: color 0.5s, background-color 0.5s;
     line-height: 75px;
     z-index: 100;
     color: #000;
+    background-color: #fff;
 }
 
-BODY.header-not-at-top HEADER {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+NAV a, NAV span {
+    transition: color 0.5s;
+}
+
+BODY.nav-not-at-top NAV {
     color: #fff;
-    background-color: rgb(137 157 255);
+    background-color: #2E8BC0;
     box-shadow: 0px 2px 8px black;
 }
 
-BODY.header-not-at-top {
-    padding-top: 75px;
+HEADER, SECTION {
+    padding: 100px 10px 100px 10px;
 }
   
 #top-of-site-pixel-anchor {
@@ -49,7 +52,7 @@ BODY.header-not-at-top {
 .nav-links, .nav-links a:not(.action-button) {
     color: black;
 }
-BODY.header-not-at-top .nav-links, BODY.header-not-at-top .nav-links a {
+BODY.nav-not-at-top .nav-links, BODY.nav-not-at-top .nav-links a {
     color: white;
 }
 
@@ -57,7 +60,7 @@ BODY.header-not-at-top .nav-links, BODY.header-not-at-top .nav-links a {
     font-size: 1.5em;
     color: black;
 }
-BODY.header-not-at-top .logo-text a {
+BODY.nav-not-at-top .logo-text a {
     color: white;
 }
 
@@ -74,25 +77,11 @@ a {
     color: rgb(44, 44, 255);
 }
 
-.banner {
-   /*  width: 100%;
-    background-image: url(images/hero.jpg);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh; */
-}
-
 .hero-img {
     display: inline-block;
     width: 100%;
     border: 0;
     margin-top: 10px;
-}
-
-.one-liner-block {
-  
-
 }
 
 .one-liner-header {
@@ -105,12 +94,12 @@ a {
 }
 
 .one-liner {
-    color: rgb(4, 86, 128);
+    color: #145DA0;
     font-size: 18px;
     line-height: 1.75;
 }
 
-.mission-statement {
+/* .mission-statement {
     background: rgb(1,93,173);
     background: linear-gradient(0deg, rgba(1,93,173,1) 0%, rgba(17,17,168,1) 35%, rgba(0,165,199,1) 100%);
     color: rgb(236, 236, 236);
@@ -118,20 +107,14 @@ a {
     text-align: center;
     font-size: 1.8em;
     font-family: "Times New Roman";
-}
-
-.flex-grid.how-we-do-it {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
+} */
 
 .how-we-do-it li {
     margin-bottom: 20px;
 }
 
 .our-way h3, .their-way h3 {
-    color: rgba(34,110,147,1);
+    color: #145DA0;
 }
 
 .our-way {
@@ -157,14 +140,27 @@ a {
     display: inline-block;
     background-color: rgb(30, 192, 30);
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 2px 2px 8px black;
     padding: 10px;
     cursor: pointer;
 }
+.action-button:hover {
+    box-shadow: 2px 2px 12px black;
+}
+.action-button.block {
+    display: block;
+}
+
+.learn-more-nav {
+    width: 250px;
+}
+.learn-more-nav > div {
+    margin-bottom: 20px;
+}
 
 .img-header {
-    color: rgba(34,110,147,1);
+    color: #0C2D48;
     font-family: Lato, sans-serif;
     font-size: 19pt;
     font-weight: 400;
@@ -179,7 +175,12 @@ a {
 
 .flex-grid {
     display: flex;
+    align-items: center;
     margin: 0 20% 0 20%;
+}
+
+.flex-grid.align-top {
+    align-items: initial;
 }
 
 .flex-grid.no-margin {
@@ -204,9 +205,18 @@ a {
     .flex-grid {
         margin: 0 3px 0 3px;
     }
+
+    .col {
+        margin: 0 10px 0 10px;
+    }
 }
 
 @media (max-width: 600px) {
+
+    HEADER, SECTION {
+        padding: 10px;
+    }
+
     .nav {
         height: 60px;
         line-height: 60px;
@@ -218,15 +228,17 @@ a {
     }
 
     .flex-grid {
-        flex-direction: column;
         margin: 0 3px 0 3px;
+    }
+    .flex-grid:not(.row) {
+        flex-direction: column;
     }
 
     .col {
         margin: 0 3px 20px 3px;
     }
 
-    .nav-links {
+    .nav-links *:not(.action-button) {
         display: none;
     }
 
@@ -243,7 +255,7 @@ a {
 }
 
 .separator {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -255,7 +267,7 @@ a {
     position: relative;
     table-layout: fixed;
     width: 100%;
-    background-color: rgba(30,108,147,1);
+    background-color: #B1D4E0;
     display: block;
 }
 
@@ -264,21 +276,23 @@ a {
     display: inline-block;
     width: 70%;
     border: 0;
-    margin-bottom: 20px;
 }
 
-.footer {
+FOOTER, FOOTER a {
     color: white;
-    background-color: #45464a;
-    text-align: right;
-    padding: 45px 45px 45px 0;
+    background-color: #2E8BC0;
+}
+FOOTER .flex-grid {
+    font-size: 22px;
 }
 
+.company-info {
+    margin-top: 40px;
+}
 
 .form {
-	margin:10px auto;
-	max-width: 400px;
-	padding: 20px 12px 10px 20px;
+	margin: 0;
+	padding: 0;
 	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .form li {
@@ -294,35 +308,26 @@ a {
 	font-weight: bold;
 }
 .form input[type=text], 
-.form input[type=date],
-.form input[type=datetime],
-.form input[type=number],
-.form input[type=search],
-.form input[type=time],
-.form input[type=url],
 .form input[type=email],
-textarea, 
-select{
+.form input[type=tel],
+textarea{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	border:1px solid #BEBEBE;
+    border-radius: 4px;
 	padding: 7px;
 	margin:0px;
-	--webkit-transition: all 0.30s ease-in-out;
-	--moz-transition: all 0.30s ease-in-out;
-	--ms-transition: all 0.30s ease-in-out;
-	--o-transition: all 0.30s ease-in-out;
-	outline: none;	
+	transition: all 0.30s ease-in-out;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
 }
 .form input[type=text]:focus, 
-.form input[type=date]:focus,
-.form input[type=datetime]:focus,
-.form input[type=number]:focus,
-.form input[type=search]:focus,
-.form input[type=time]:focus,
-.form input[type=url]:focus,
 .form input[type=email]:focus,
+.form input[type=tel]:focus,
 .form textarea:focus, 
 .form select:focus{
 	-moz-box-shadow: 0 0 8px #88D5E9;
@@ -337,9 +342,6 @@ select{
 .form .field-long{
 	width: 100%;
 }
-.form .field-select{
-	width: 100%;
-}
 .form .field-textarea{
 	height: 100px;
 }
@@ -347,6 +349,7 @@ select{
 	background: #4B99AD;
 	padding: 8px 15px 8px 15px;
 	border: none;
+    border-radius: 4px;
 	color: #fff;
 }
 .form input[type=submit]:hover, .form input[type=button]:hover{
