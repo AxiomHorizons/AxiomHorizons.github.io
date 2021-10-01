@@ -140,13 +140,14 @@ a {
     display: inline-block;
     background-color: rgb(30, 192, 30);
     color: white;
-    border-radius: 20px;
-    box-shadow: 2px 2px 8px black;
-    padding: 10px;
+    border-radius: 2em;
+    box-shadow: 0 0 4px black;
+    padding: 10px 20px 10px 20px;
     cursor: pointer;
+    font-weight: bold;
 }
 .action-button:hover {
-    box-shadow: 2px 2px 12px black;
+    box-shadow: 0 0 8px black;
 }
 .action-button.block {
     display: block;
@@ -237,6 +238,13 @@ a {
     .col {
         margin: 0 3px 20px 3px;
     }
+    .col.first-on-mobile {
+        order: 1;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
 
     .nav-links *:not(.action-button) {
         display: none;
@@ -271,6 +279,13 @@ a {
     display: block;
 }
 
+.job-requirements li {
+    margin-bottom: 10px;
+}
+.job-requirements li::marker {
+    color: #145DA0;
+    font-size: 28px;
+}
 
 .img1 {
     display: inline-block;
@@ -301,7 +316,7 @@ FOOTER .flex-grid {
 	list-style: none;
 	margin: 10px 0 0 0;
 }
-.form label{
+.form label:not(.unformatted){
 	margin:0 0 3px 0;
 	padding:0px;
 	display:block;
@@ -310,6 +325,8 @@ FOOTER .flex-grid {
 .form input[type=text], 
 .form input[type=email],
 .form input[type=tel],
+.form input[type=file],
+select,
 textarea{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -328,6 +345,7 @@ textarea{
 .form input[type=text]:focus, 
 .form input[type=email]:focus,
 .form input[type=tel]:focus,
+.form input[type=file]:focus,
 .form textarea:focus, 
 .form select:focus{
 	-moz-box-shadow: 0 0 8px #88D5E9;
@@ -340,6 +358,9 @@ textarea{
 }
 
 .form .field-long{
+	width: 100%;
+}
+.form .field-select{
 	width: 100%;
 }
 .form .field-textarea{

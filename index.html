@@ -14,11 +14,9 @@
                 <a href="/"><b>AXIOM</b><i>Horizons</i></a>
             </div>
             <div class="col right nav-links">
-                <!-- <a href="/calculate-salary">Calculate Your Pay</a>
-                <span class="dot">&bullet;</span> -->
                 <a href="/contact-us">Contact Us</a>
                 <span class="dot">&bullet;</span>
-                <a href="/get-started" class="action-button inline">Join Us</a>
+                <a href="/sign-in" class="action-button inline">Join Us</a>
             </div>
         </div>
     </nav>
@@ -35,8 +33,8 @@
                         benefits, and more.
                         <br><br>
                         <div>
-                            <a class="action-button" href="/get-started">
-                                <b>Take Control Now</b> - it's free
+                            <a class="action-button" href="/sign-in">
+                                Take Control Now
                             </a>
                         </div>
                     </div>
@@ -54,9 +52,9 @@
         <div class="flex-grid what-to-expect">
             <div class="col center">
                 <div class="img-header">Upfront&nbsp;Salaries</div>
-                <img src="images/salary.png" class="img1" alt="Calculate your salary" />
+                <img src="images/salary.png" class="img1" alt="Discover your salary" />
                 <p>
-                    Choose which project you want to work on, then use our calculator to select your benefits and
+                    Choose which project you want to work on, then select your benefits and
                     discover exactly what your salary will be. <a href="/learn-more#upfront-salaries">Learn
                         more</a>
                 </p>
@@ -90,7 +88,7 @@
                 <h3>Traditional Employees</h3>
                 <ul>
                     <li>Don't make as much money.</li>
-                    <li>Limited choice of work.</li>
+                    <li>Have a limited choice of work.</li>
                     <li>Salaries typically don't keep up with inflation.</li>
                 </ul>
             </div>
@@ -99,6 +97,7 @@
                 <ul>
                     <li>Flexible schedule and choice of work.</li>
                     <li>Competitive benefits such as health insurance, retirement accounts, and paid time off.</li>
+                    <li>Save money on accounting, invoicing, business insurance, and more.</li>
                     <li>Pay adjusts for inflation with each project.</li>
                     <li>Free company background checks for new clients.</li>
                 </ul>
@@ -108,6 +107,7 @@
                 <ul>
                     <li>Wear too many hats, can't just focus on the work.</li>
                     <li>Have fewer benefits and pay more for them without group rates.</li>
+                    <li>Pay more accounting fees.</li>
                     <li>No sick or holiday pay.</li>
                 </ul>
             </div>
@@ -124,7 +124,7 @@
                     Great! Follow our step-by-step guide, risk free, to see how we can help you get and keep what you
                     deserve.
                 </p>
-                <a href="/get-started" class="action-button">
+                <a href="/sign-in" class="action-button">
                     Get Started Now
                 </a>
             </div>
@@ -143,22 +143,22 @@
             </div>
             <div class="col">
                 <h1>Send us a question</h1>
-                <form>
+                <form method="POST" action="https://functions.axiomhorizons.com/api/question-form">
                     <ul class="form">
-                        <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1"
-                                class="field-divided" placeholder="First" /> <input type="text" name="field2"
+                        <li><label>Full Name <span class="required">*</span></label><input type="text" name="firstName"
+                                class="field-divided" placeholder="First" /> <input type="text" name="lastName"
                                 class="field-divided" placeholder="Last" /></li>
                         <li>
                             <label>Email <span class="required">*</span></label>
-                            <input type="email" name="field3" class="field-long" />
+                            <input type="email" name="email" class="field-long" />
                         </li>
                         <li>
                             <label>Telephone <span class="required">*</span></label>
-                            <input type="tel" name="field4" class="field-long" />
+                            <input type="tel" name="phone" class="field-long" />
                         </li>
                         <li>
                             <label>Your Message <span class="required">*</span></label>
-                            <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+                            <textarea name="message" id="message" class="field-long field-textarea"></textarea>
                         </li>
                         <li>
                             <input type="submit" value="Submit" />
@@ -171,14 +171,11 @@
     <footer>
         <section>
             <div class="flex-grid space-around">
-                <!-- <div class="col center">
-                    <a href="/calculate-salary">Calculate Your Pay</a>
-                </div> -->
                 <div class="col center">
                     <a href="/learn-more">Get More Info</a><br>
                 </div>
                 <div class="col center">
-                    <a href="/get-started">Sign Up With Us</a><br>
+                    <a href="/sign-in">Sign Up With Us</a><br>
                 </div>
                 <div class="col center">
                     <a href="/contact-us">Contact Us</a><br>
