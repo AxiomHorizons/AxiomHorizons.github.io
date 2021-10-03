@@ -99,16 +99,6 @@ a {
     line-height: 1.75;
 }
 
-/* .mission-statement {
-    background: rgb(1,93,173);
-    background: linear-gradient(0deg, rgba(1,93,173,1) 0%, rgba(17,17,168,1) 35%, rgba(0,165,199,1) 100%);
-    color: rgb(236, 236, 236);
-    padding: 7.5rem 20% 7.5rem 20%;
-    text-align: center;
-    font-size: 1.8em;
-    font-family: "Times New Roman";
-} */
-
 .how-we-do-it li {
     margin-bottom: 20px;
 }
@@ -152,6 +142,9 @@ a {
 .action-button.block {
     display: block;
 }
+.action-button.inline {
+    display: inline;
+}
 
 .learn-more-nav {
     width: 250px;
@@ -168,10 +161,6 @@ a {
     line-height: 1.4;
     margin: 20px 0 20px 0;
     text-align: center;
-}
-
-.action-button.inline {
-    display: inline;
 }
 
 .flex-grid {
@@ -200,6 +189,10 @@ a {
 .calc-wage {
     width: 50%;
     margin: 20px;
+}
+
+.content {
+    margin: 10px 10% 10px 10%;
 }
 
 @media (max-width: 1400px) {
