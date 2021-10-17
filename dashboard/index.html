@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
- 
-   <base href="/">
+
+    <base href="/">
     <title>Dashboard | Axiom Horizons</title>
     <link rel="stylesheet" href="../styles.css" />
     <link rel="canonical" href="https://www.axiomhorizons.com/dashboard" />
@@ -20,8 +20,8 @@
             </div>
             <div class="col right nav-links">
                 <a href="#find-a-job">Find Job</a>
-                <span class="dot">&bullet;</span>
-                <a href="#submit-contract">Calc Salary</a>
+                <!-- <span class="dot">&bullet;</span>
+                <a href="#submit-contract">Calc Salary</a> -->
                 <span class="dot">&bullet;</span>
                 <a href="#submit-a-job">Submit Job</a>
             </div>
@@ -59,6 +59,7 @@
                     <li>Information Technology position. Examples: developer,
                         project manager, tester, business analyst, engineer, or network administrator.</li>
                     <li>At least $50 per hour. </li>
+                    <li>Duration of 3 months or more. </li>
                     <li>Based in the United States.</li>
                 </ul>
             </div>
@@ -66,24 +67,22 @@
             </div>
         </div>
     </section>
-    <div class="separator">
+    <!-- <div class="separator">
         Calculate salary <a id="calc-salary"></a>
     </div>
     <section>
         <div class="flex-grid">
             <div class="col">
                 <h2>Calculate your salary for the new job</h2>
-                <p>We don't For each job you would like to apply to, fill in and submit this form and we'll schedule the
-                    interview for you. We'll also go over any invoicing or insurance preconditions that the job
-                    requires.
+                <p>Discover what your salary would be for each job by filling in this form.
                 </p>
-                <!-- <form action="https://functions.axiomhorizons.com/api/app-submission" method="POST"> -->
-                <form action="http://localhost:7071/api/app-submission" method="POST" enctype="multipart/form-data">
+                <form action="https://functions.axiomhorizons.com/api/app-submission" method="POST"
+                    enctype="multipart/form-data">
                     <ul class="form">
                         <li>
                             <label>State work is performed in <span class="required">*</span></label>
                             <select>
-                                
+
                             </select>
                         </li>
                         <li>
@@ -100,7 +99,7 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
     <div class="separator">
         Submit the Job <a id="submit-a-job"></a>
     </div>
@@ -112,8 +111,8 @@
                     interview for you. We'll also go over any invoicing or insurance preconditions that the job
                     requires as well as initiate a company background check.
                 </p>
-                <!-- <form action="https://functions.axiomhorizons.com/api/app-submission" method="POST"> -->
-                <form action="http://localhost:7071/api/app-submission" method="POST" enctype="multipart/form-data">
+                <form action="https://functions.axiomhorizons.com/api/app-submission" method="POST"
+                    enctype="multipart/form-data">
                     <ul class="form">
                         <li>
                             <label>Job Posting URL <span class="required">*</span></label>
@@ -133,31 +132,9 @@
             </div>
         </div>
     </section>
-    <!--     <div class="separator">
-        Step 4 <a id="hr-portal"></a>
-    </div>
-    <section>
-        <div class="flex-grid space-around">
-            <div class="col center">
-            </div>
-            <div class="col">
-                <h1>HR Portal</h1>
-                <p>
-                    Begin by creating an account with no commitment. Then use our salary calculator to get an estimate
-                    of what you could make.
-                </p>
-                <a href="/sign-in" class="action-button">
-                    Get Started Now
-                </a>
-            </div>
-        </div>
-    </section> -->
     <footer>
         <section>
             <div class="flex-grid space-around">
-                <!-- <div class="col center">
-                    <a href="/calculate-salary">Calculate Your Pay</a>
-                </div> -->
                 <div class="col center">
                     <a href="/learn-more">Get More Info</a><br>
                 </div>
