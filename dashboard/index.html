@@ -108,17 +108,17 @@
         <div class="flex-grid">
             <div class="col">
                 <h2>Submit a job for consideration</h2>
-                <p>For each job you would like to apply to, fill in and submit this form and we'll schedule the
-                    interview for you. We'll also go over any invoicing or insurance preconditions that the job
-                    requires as well as initiate a company background check.
+                <p>For each job you would like to apply to, fill in and submit this form. We'll verify the job meets our
+                    requirements and we'll also go over any invoicing or insurance preconditions that the job
+                    requires. Also, we'll initiate a company background check if needed.
                 </p>
                 <form action="https://functions.axiomhorizons.com/api/app-submission" method="POST"
                     enctype="multipart/form-data">
                     <ul class="form">
                         <li>
                             <label for="url">Job Posting URL <span class="required">*</span></label>
-                            <input type="text" id="url" name="url" class="field-long"
-                                placeholder="Job Detail Page URL" />
+                            <textarea type="text" id="url" name="url" class="field-long"
+                                placeholder="One URL per line"></textarea>
                         </li>
                         <li>
                             <label for="resume">Updated Resume <span class="required">*</span></label>
