@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121183150-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121183150-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <base href="/">
+    <title>Salary Calculator | Axiom Horizons</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="canonical" href="https://www.axiomhorizons.com/salary-calculator" />
+    <meta name="description"
+        content="Get an estimate of what you could be earning and a look at the benefits you receive when you sign up with Axiom Horizons." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://www.axiomhorizons.com/favicon-16x16.png">
+</head>
+
+<body>
+    <nav>
+        <div class="flex-grid row">
+            <div class="col logo-text">
+                <a href="/"><b>AXIOM</b><i>Horizons</i></a>
+            </div>
+            <div class="col right nav-links">
+                <a href="/contact-us">Contact Us</a>
+                <span class="dot">&bullet;</span>
+                <a href="/sign-in" class="action-button inline">Join Us</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="flex-grid">
+            <div class="col">
+                <div>
+                    <h1 class="one-liner-header">
+                        Salary Calculator
+                    </h1>
+                    <div class="one-liner">
+                        With Axiom Horizons, you have the power to choose which project you want to work.
+                        Now, let's find out what you could earn doing it!
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="/images/money.png" class="hero-img" alt="Find your salary" width="500" height="500" />
+            </div>
+        </div>
+    </header>
+    <!-- <div class="separator">
+        Select your rate <a id="select-rate"></a>
+    </div> -->
+    <section>
+        <div class="flex-grid align-top">
+            <div class="col">
+                <p><b>First, select the hourly rate of the C2C job that you're interested in...</b></p>
+                <select onchange="document.getElementById('salary-results').style.visibility = !!this.value ? 'visible' : 'hidden';document.getElementById('salary').innerText = this.value;">
+                    <option value=""> - Select the hourly wage -</option>
+                    <option value="$73,000">$50 per hour</option>
+                    <option value="$81,000">$55 per hour</option>
+                    <option value="$89,000">$60 per hour</option>
+                    <option value="$97,000">$65 per hour</option>
+                    <option value="$105,000">$70 per hour</option>
+                    <option value="$113,000">$75 per hour</option>
+                    <option value="$121,000">$80 per hour</option>
+                    <option value="$129,000">$85 per hour</option>
+                    <option value="$137,000">$90 per hour</option>
+                    <option value="$145,000">$95 per hour</option>
+                    <option value="$153,000">$100 per hour</option>
+                    <option value="$161,000">$105 per hour</option>
+                    <option value="$169,000">$110 per hour</option>
+                    <option value="$177,000">$115 per hour</option>
+                    <option value="$185,000">$120 per hour</option>
+                    <option value="$193,000">$125 per hour</option>
+                    <option value="$201,000">$130 per hour</option>
+                    <option value="$209,000">$135 per hour</option>
+                    <option value="$217,000">$140 per hour</option>
+                    <option value="$225,000">$145 per hour</option>
+                    <option value="$233,000">$150 per hour</option>
+                    <option value="$241,000">$155 per hour</option>
+                    <option value="$249,000">$160 per hour</option>
+                    <option value="$257,000">$165 per hour</option>
+                    <option value="$265,000">$170 per hour</option>
+                    <option value="$273,000">$175 per hour</option>
+                    <option value="$281,000">$180 per hour</option>
+                    <option value="$289,000">$185 per hour</option>
+                    <option value="$297,000">$190 per hour</option>
+                    <option value="$305,000">$195 per hour</option>
+                    <option value="$313,000">$200 per hour</option>
+                </select>
+            </div>
+            <div class="col">
+                <div id="salary-results" style="visibility: hidden;">
+                    Your estimated salary is <b><span id="salary"></span></b><sub>†</sub>. You'll also get:
+                    <ul>
+                        <li>Access to group health, dental, and vision insurance<sub>‡</sub></li>
+                        <li>Up to <b>$500</b> per month to put towards your health insurance premium<sub>‡</sub></li>
+                        <li>Up to 3% contribution match in a qualified 401K plan<sub>‡</sub></li>
+                        <li>Unlimited paid time off<sub>‡</sub></li>
+                    </ul>
+                    In addition, contractors have many expenses and concerns. By going through us, we take care of the following:
+                    <ul>
+                        <li>Employer payroll tax payments to State and Fed</li>
+                        <li>Tax filings and reports to State and Fed</li>
+                        <li>Compliance with new tax laws</li>
+                        <li>Worker's Compensation insurance policy</li>
+                        <li>Errors and Omissions insurance policy</li>
+                        <li>Professional Liability insurance policy</li>
+                        <li>Unemployment insurance</li>
+                        <li>Company background checks</li>
+                        <li>Accounting fees</li>
+                        <li>Audit assessments</li>
+                    </ul>
+                    <p>
+                        Let's get started today by creating an account with no commitment.
+                    </p>
+                    <a href="/sign-in" class="action-button">
+                        Get Started Now
+                    </a><br><br>
+                    Questions? <a href="../contact-us/">Contact us</a> for more info.<br><br>
+                    <sub>† - estimate only, subject to state laws.</sub><br>
+                    <sub>‡ - see employee handbook for details and conditions.</sub><br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section>
+            <div class="flex-grid space-around">
+                <div class="col center">
+                    <a href="/learn-more">Get More Info</a><br>
+                </div>
+                <div class="col center">
+                    <a href="/sign-in">Sign Up With Us</a><br>
+                </div>
+                <div class="col center">
+                    <a href="/contact-us">Contact Us</a><br>
+                </div>
+            </div>
+            <div class="company-info center">
+                <b>AXIOM</b><i>Horizons</i><br />
+                <a href="/terms">Terms</a>
+                <span class="dot">&bullet;</span>
+                <a href="/privacy">Privacy</a>
+                <span class="dot">&bullet;</span>
+                <a href="/credits">Credits</a>
+                <span class="dot">&bullet;</span>
+                <a href="/cookies">Cookies</a>
+            </div>
+            <div class="center">
+                &copy; 2021
+            </div>
+        </section>
+    </footer>
+
+    <div id="top-of-site-pixel-anchor"></div>
+    <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>

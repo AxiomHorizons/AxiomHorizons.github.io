@@ -383,3 +383,7 @@ textarea{
 .form .required{
 	color:red;
 }
+
+sub {
+    font-size: 10px;
+}
