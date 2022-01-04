@@ -32,7 +32,7 @@
             <div class="col right nav-links">
                 <a href="/contact-us">Contact Us</a>
                 <span class="dot">&bullet;</span>
-                <a href="/sign-in" class="action-button inline">Join Us</a>
+                <a href="/get-started" class="action-button inline">Join Us</a>
             </div>
         </div>
     </nav>
@@ -57,43 +57,163 @@
     <!-- <div class="separator">
         Select your rate <a id="select-rate"></a>
     </div> -->
-    <section>
+    <section style="padding-top: 0;">
         <div class="flex-grid align-top">
             <div class="col">
                 <p><b>First, select the hourly rate of the C2C job that you're interested in...</b></p>
                 <select onchange="document.getElementById('salary-results').style.visibility = !!this.value ? 'visible' : 'hidden';document.getElementById('salary').innerText = this.value;">
                     <option value=""> - Select the hourly wage -</option>
-                    <option value="$73,000">$50 per hour</option>
-                    <option value="$81,000">$55 per hour</option>
-                    <option value="$89,000">$60 per hour</option>
-                    <option value="$97,000">$65 per hour</option>
-                    <option value="$105,000">$70 per hour</option>
-                    <option value="$113,000">$75 per hour</option>
-                    <option value="$121,000">$80 per hour</option>
-                    <option value="$129,000">$85 per hour</option>
-                    <option value="$137,000">$90 per hour</option>
-                    <option value="$145,000">$95 per hour</option>
-                    <option value="$153,000">$100 per hour</option>
-                    <option value="$161,000">$105 per hour</option>
-                    <option value="$169,000">$110 per hour</option>
-                    <option value="$177,000">$115 per hour</option>
-                    <option value="$185,000">$120 per hour</option>
-                    <option value="$193,000">$125 per hour</option>
-                    <option value="$201,000">$130 per hour</option>
-                    <option value="$209,000">$135 per hour</option>
-                    <option value="$217,000">$140 per hour</option>
-                    <option value="$225,000">$145 per hour</option>
-                    <option value="$233,000">$150 per hour</option>
-                    <option value="$241,000">$155 per hour</option>
-                    <option value="$249,000">$160 per hour</option>
-                    <option value="$257,000">$165 per hour</option>
-                    <option value="$265,000">$170 per hour</option>
-                    <option value="$273,000">$175 per hour</option>
-                    <option value="$281,000">$180 per hour</option>
-                    <option value="$289,000">$185 per hour</option>
-                    <option value="$297,000">$190 per hour</option>
-                    <option value="$305,000">$195 per hour</option>
-                    <option value="$313,000">$200 per hour</option>
+                    <option value="$76,000">$50 per hour</option>
+                    <option value="$77,000">$51 per hour</option>
+                    <option value="$79,000">$52 per hour</option>
+                    <option value="$81,000">$53 per hour</option>
+                    <option value="$82,000">$54 per hour</option>
+                    <option value="$84,000">$55 per hour</option>
+                    <option value="$86,000">$56 per hour</option>
+                    <option value="$87,000">$57 per hour</option>
+                    <option value="$89,000">$58 per hour</option>
+                    <option value="$91,000">$59 per hour</option>
+                    <option value="$92,000">$60 per hour</option>
+                    <option value="$94,000">$61 per hour</option>
+                    <option value="$96,000">$62 per hour</option>
+                    <option value="$97,000">$63 per hour</option>
+                    <option value="$99,000">$64 per hour</option>
+                    <option value="$101,000">$65 per hour</option>
+                    <option value="$102,000">$66 per hour</option>
+                    <option value="$104,000">$67 per hour</option>
+                    <option value="$106,000">$68 per hour</option>
+                    <option value="$107,000">$69 per hour</option>
+                    <option value="$109,000">$70 per hour</option>
+                    <option value="$111,000">$71 per hour</option>
+                    <option value="$112,000">$72 per hour</option>
+                    <option value="$114,000">$73 per hour</option>
+                    <option value="$116,000">$74 per hour</option>
+                    <option value="$117,000">$75 per hour</option>
+                    <option value="$119,000">$76 per hour</option>
+                    <option value="$121,000">$77 per hour</option>
+                    <option value="$122,000">$78 per hour</option>
+                    <option value="$124,000">$79 per hour</option>
+                    <option value="$126,000">$80 per hour</option>
+                    <option value="$127,000">$81 per hour</option>
+                    <option value="$129,000">$82 per hour</option>
+                    <option value="$131,000">$83 per hour</option>
+                    <option value="$132,000">$84 per hour</option>
+                    <option value="$134,000">$85 per hour</option>
+                    <option value="$136,000">$86 per hour</option>
+                    <option value="$137,000">$87 per hour</option>
+                    <option value="$139,000">$88 per hour</option>
+                    <option value="$141,000">$89 per hour</option>
+                    <option value="$142,000">$90 per hour</option>
+                    <option value="$144,000">$91 per hour</option>
+                    <option value="$146,000">$92 per hour</option>
+                    <option value="$147,000">$93 per hour</option>
+                    <option value="$149,000">$94 per hour</option>
+                    <option value="$151,000">$95 per hour</option>
+                    <option value="$152,000">$96 per hour</option>
+                    <option value="$154,000">$97 per hour</option>
+                    <option value="$156,000">$98 per hour</option>
+                    <option value="$157,000">$99 per hour</option>
+                    <option value="$159,000">$100 per hour</option>
+                    <option value="$161,000">$101 per hour</option>
+                    <option value="$162,000">$102 per hour</option>
+                    <option value="$164,000">$103 per hour</option>
+                    <option value="$166,000">$104 per hour</option>
+                    <option value="$167,000">$105 per hour</option>
+                    <option value="$169,000">$106 per hour</option>
+                    <option value="$171,000">$107 per hour</option>
+                    <option value="$172,000">$108 per hour</option>
+                    <option value="$174,000">$109 per hour</option>
+                    <option value="$176,000">$110 per hour</option>
+                    <option value="$177,000">$111 per hour</option>
+                    <option value="$179,000">$112 per hour</option>
+                    <option value="$181,000">$113 per hour</option>
+                    <option value="$182,000">$114 per hour</option>
+                    <option value="$184,000">$115 per hour</option>
+                    <option value="$186,000">$116 per hour</option>
+                    <option value="$187,000">$117 per hour</option>
+                    <option value="$189,000">$118 per hour</option>
+                    <option value="$191,000">$119 per hour</option>
+                    <option value="$192,000">$120 per hour</option>
+                    <option value="$194,000">$121 per hour</option>
+                    <option value="$196,000">$122 per hour</option>
+                    <option value="$197,000">$123 per hour</option>
+                    <option value="$199,000">$124 per hour</option>
+                    <option value="$201,000">$125 per hour</option>
+                    <option value="$202,000">$126 per hour</option>
+                    <option value="$204,000">$127 per hour</option>
+                    <option value="$206,000">$128 per hour</option>
+                    <option value="$207,000">$129 per hour</option>
+                    <option value="$209,000">$130 per hour</option>
+                    <option value="$211,000">$131 per hour</option>
+                    <option value="$212,000">$132 per hour</option>
+                    <option value="$214,000">$133 per hour</option>
+                    <option value="$216,000">$134 per hour</option>
+                    <option value="$217,000">$135 per hour</option>
+                    <option value="$219,000">$136 per hour</option>
+                    <option value="$221,000">$137 per hour</option>
+                    <option value="$222,000">$138 per hour</option>
+                    <option value="$224,000">$139 per hour</option>
+                    <option value="$226,000">$140 per hour</option>
+                    <option value="$227,000">$141 per hour</option>
+                    <option value="$229,000">$142 per hour</option>
+                    <option value="$231,000">$143 per hour</option>
+                    <option value="$232,000">$144 per hour</option>
+                    <option value="$234,000">$145 per hour</option>
+                    <option value="$236,000">$146 per hour</option>
+                    <option value="$237,000">$147 per hour</option>
+                    <option value="$239,000">$148 per hour</option>
+                    <option value="$241,000">$149 per hour</option>
+                    <option value="$242,000">$150 per hour</option>
+                    <option value="$244,000">$151 per hour</option>
+                    <option value="$246,000">$152 per hour</option>
+                    <option value="$247,000">$153 per hour</option>
+                    <option value="$249,000">$154 per hour</option>
+                    <option value="$251,000">$155 per hour</option>
+                    <option value="$252,000">$156 per hour</option>
+                    <option value="$254,000">$157 per hour</option>
+                    <option value="$256,000">$158 per hour</option>
+                    <option value="$257,000">$159 per hour</option>
+                    <option value="$259,000">$160 per hour</option>
+                    <option value="$261,000">$161 per hour</option>
+                    <option value="$262,000">$162 per hour</option>
+                    <option value="$264,000">$163 per hour</option>
+                    <option value="$266,000">$164 per hour</option>
+                    <option value="$267,000">$165 per hour</option>
+                    <option value="$269,000">$166 per hour</option>
+                    <option value="$271,000">$167 per hour</option>
+                    <option value="$272,000">$168 per hour</option>
+                    <option value="$274,000">$169 per hour</option>
+                    <option value="$276,000">$170 per hour</option>
+                    <option value="$277,000">$171 per hour</option>
+                    <option value="$279,000">$172 per hour</option>
+                    <option value="$281,000">$173 per hour</option>
+                    <option value="$282,000">$174 per hour</option>
+                    <option value="$284,000">$175 per hour</option>
+                    <option value="$286,000">$176 per hour</option>
+                    <option value="$287,000">$177 per hour</option>
+                    <option value="$289,000">$178 per hour</option>
+                    <option value="$291,000">$179 per hour</option>
+                    <option value="$292,000">$180 per hour</option>
+                    <option value="$294,000">$181 per hour</option>
+                    <option value="$296,000">$182 per hour</option>
+                    <option value="$297,000">$183 per hour</option>
+                    <option value="$299,000">$184 per hour</option>
+                    <option value="$301,000">$185 per hour</option>
+                    <option value="$302,000">$186 per hour</option>
+                    <option value="$304,000">$187 per hour</option>
+                    <option value="$306,000">$188 per hour</option>
+                    <option value="$307,000">$189 per hour</option>
+                    <option value="$309,000">$190 per hour</option>
+                    <option value="$311,000">$191 per hour</option>
+                    <option value="$312,000">$192 per hour</option>
+                    <option value="$314,000">$193 per hour</option>
+                    <option value="$316,000">$194 per hour</option>
+                    <option value="$317,000">$195 per hour</option>
+                    <option value="$319,000">$196 per hour</option>
+                    <option value="$321,000">$197 per hour</option>
+                    <option value="$322,000">$198 per hour</option>
+                    <option value="$324,000">$199 per hour</option>
+                    <option value="$326,000">$200 per hour</option>
                 </select>
             </div>
             <div class="col">
@@ -107,6 +227,7 @@
                     </ul>
                     In addition, contractors have many expenses and concerns. By going through us, we take care of the following:
                     <ul>
+                        <li>Invoicing and Accounting</li>
                         <li>Employer payroll tax payments to State and Fed</li>
                         <li>Tax filings and reports to State and Fed</li>
                         <li>Compliance with new tax laws</li>
@@ -115,13 +236,12 @@
                         <li>Professional Liability insurance policy</li>
                         <li>Unemployment insurance</li>
                         <li>Company background checks</li>
-                        <li>Accounting fees</li>
                         <li>Audit assessments</li>
                     </ul>
                     <p>
                         Let's get started today by creating an account with no commitment.
                     </p>
-                    <a href="/sign-in" class="action-button">
+                    <a href="/get-started" class="action-button">
                         Get Started Now
                     </a><br><br>
                     Questions? <a href="../contact-us/">Contact us</a> for more info.<br><br>
@@ -138,7 +258,7 @@
                     <a href="/learn-more">Get More Info</a><br>
                 </div>
                 <div class="col center">
-                    <a href="/sign-in">Sign Up With Us</a><br>
+                    <a href="/get-started">Sign Up With Us</a><br>
                 </div>
                 <div class="col center">
                     <a href="/contact-us">Contact Us</a><br>
