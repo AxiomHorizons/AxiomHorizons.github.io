@@ -276,10 +276,10 @@ a {
     display: block;
 }
 
-.job-requirements li {
+.bullets li {
     margin-bottom: 10px;
 }
-.job-requirements li::marker {
+.bullets li::marker {
     color: #145DA0;
     font-size: 28px;
 }
