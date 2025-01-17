@@ -34,7 +34,7 @@ BODY.nav-not-at-top NAV {
 HEADER, SECTION {
     padding: 100px 10px 100px 10px;
 }
-  
+
 #top-of-site-pixel-anchor {
     position: absolute;
     width: 1px;
@@ -86,6 +86,9 @@ a {
     max-width: 500px;
     border: 0;
     margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px #000000;
+
 }
 
 .one-liner-header {
@@ -322,7 +325,7 @@ FOOTER .flex-grid {
 	display:block;
 	font-weight: bold;
 }
-.form input[type=text], 
+.form input[type=text],
 .form input[type=email],
 .form input[type=tel],
 .form input[type=file],
@@ -342,11 +345,11 @@ textarea{
 	-o-transition: all 0.30s ease-in-out;
 	outline: none;
 }
-.form input[type=text]:focus, 
+.form input[type=text]:focus,
 .form input[type=email]:focus,
 .form input[type=tel]:focus,
 .form input[type=file]:focus,
-.form textarea:focus, 
+.form textarea:focus,
 .form select:focus{
 	-moz-box-shadow: 0 0 8px #88D5E9;
 	-webkit-box-shadow: 0 0 8px #88D5E9;
